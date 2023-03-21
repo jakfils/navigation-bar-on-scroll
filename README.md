@@ -1,6 +1,6 @@
-# Reviews Carousel
+# Responsive NavBar
 
-A HTML, CSS and Vanilla JavaScript carousel of reviews with a button that generates random reviews.
+A HTML, CSS and Vanilla JavaScript responsive NavBar.
 
 ## Desktop view
 
