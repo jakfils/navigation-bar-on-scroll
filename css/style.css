@@ -96,6 +96,7 @@ ul a:hover {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+
 .mainMessage p {
   max-width: 800px;
   margin: auto;
@@ -125,9 +126,17 @@ ul a:hover {
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
+  nav {
+    background-color: aliceblue;
+  }
+
   .logo {
     font-size: 1.0em;
     padding-top: 10px;
+  }
+
+  .logo a {
+    color: #000000c2;
   }
 
   ul {
@@ -140,7 +149,7 @@ ul a:hover {
 
   .hamburgers {
     display: block;
-    color: #06659C;
+    color: #000000c2;
     font-size: 1.5em;
   }
 
@@ -165,5 +174,6 @@ ul a:hover {
   #mobileNav a {
     margin-bottom: 20px;
     font-size: 1.8em;
+    color: #000000c2;
   }
 }
