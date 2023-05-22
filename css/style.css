@@ -16,7 +16,7 @@ body {
 
 .opacity {
   position: absolute;
-  background-color: rgb(95, 159, 237);
+  background-color: black;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@ nav {
   margin-left: 15px;
   font-size: 1.3rem;
   margin-top: -5px;
-  color: black;
+  color: white;
 }
 
 ul {
