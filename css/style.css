@@ -1,6 +1,27 @@
 body {
   font-family: Roboto, sans-serif;
-  background-color: rgb(184, 211, 235);
+}
+
+.container {
+  margin: auto;
+}
+
+.main {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.opacity {
+  position: absolute;
+  background-color: rgb(95, 159, 237);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Nav */
@@ -11,8 +32,10 @@ nav {
   justify-content: space-between;
   min-height: 55px;
   padding: 10px 20px 0px 0px;
-  background-color: aliceblue;
-  box-shadow: 0px 1px 19px 0px rgba(0, 0, 0, 0.65);
+  position: absolute;
+  width: 100%;
+  /* background-color: aliceblue; */
+  /* box-shadow: 0px 1px 19px 0px rgba(0, 0, 0, 0.65); */
 
 }
 
@@ -20,14 +43,7 @@ nav {
   margin-left: 15px;
   font-size: 1.3rem;
   margin-top: -5px;
-}
-
-.kirutech {
-  color: #06659C;
-}
-
-.solutions {
-  color: #F9CB09;
+  color: black;
 }
 
 ul {
@@ -42,7 +58,7 @@ ul {
 a {
   margin: 0px 15px 0px 0px;
   text-decoration: none;
-  color: #000000;
+  color: #fff;
 }
 
 .hamburgers {
@@ -67,6 +83,7 @@ a:hover {
 .visible {
   display: block;
 }
+
 .invisible {
   display: none !important;
 }
