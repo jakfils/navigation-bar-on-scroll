@@ -7,7 +7,7 @@ body {
 }
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@ body {
 .opacity {
   position: absolute;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   top: 0;
   left: 0;
   width: 100%;
@@ -86,7 +86,7 @@ ul a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  gwidth: 100%;
+  width: 98%;
   color: #fff;
   text-align: center;
 }
@@ -122,6 +122,9 @@ ul a:hover {
 }
 
 
+.pp p {
+  color: black;
+}
 
 /* Media Queries */
 
@@ -175,5 +178,10 @@ ul a:hover {
     margin-bottom: 20px;
     font-size: 1.8em;
     color: #000000c2;
+  }
+
+
+  .mainMaxTop {
+    top: 200px;
   }
 }
