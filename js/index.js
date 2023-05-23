@@ -7,6 +7,7 @@ const mediaQuery2 = window.matchMedia("(max-width: 768px)");
 const container = document.querySelector(".container");
 const nav = document.querySelector("nav");
 const main = document.querySelector(".main");
+const pps = document.querySelectorAll(".pp");
 
 hamburgers.forEach((hamburger) => {
   hamburger.addEventListener("click", (e) => {
@@ -20,6 +21,9 @@ hamburgers.forEach((hamburger) => {
     } else {
       main.style.top = "200px";
     }
+    pps.forEach((pp) => {
+      pp.classList.toggle("translate");
+    });
     nav.style.zIndex = "4";
   });
 });
@@ -30,9 +34,13 @@ mediaQuery.addEventListener("change", (e) => {
   hamburger2.classList.add("invisible");
   hamburger2.classList.remove("visible");
   mobileNav.classList.add("invisible");
+  
 });
 
 mediaQuery2.addEventListener("change", (e) => {
   main.style.top = "0px";
+  pps.forEach((pp) => {
+    pp.classList.remove("translate");
+  });
   nav.style.zIndex = "4";
 });

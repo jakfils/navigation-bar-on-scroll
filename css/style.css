@@ -17,7 +17,7 @@ body {
 .opacity {
   position: absolute;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.5;
   top: 0;
   left: 0;
   width: 100%;
@@ -124,6 +124,10 @@ ul a:hover {
 
 .pp p {
   color: black;
+}
+
+.translate {
+  transform: translate(0, 200px);
 }
 
 /* Media Queries */
