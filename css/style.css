@@ -67,7 +67,7 @@ a {
 }
 
 ul a:hover {
-  text-decoration: underline;
+  color: aqua;
 }
 
 .socialLinks {
@@ -113,6 +113,11 @@ ul a:hover {
   letter-spacing: 2px;
 }
 
+.mainMessage button:hover {
+  color: aqua;
+  border: 1px solid aqua;
+}
+
 .visible {
   display: block;
 }
@@ -142,7 +147,7 @@ ul a:hover {
 .about span,
 .services span,
 .tours span {
-  color: aquamarine;
+  color: aqua;
 }
 
 .about, .tours{
@@ -159,6 +164,9 @@ ul a:hover {
   text-transform: inherit;
 }
 
+ul a:hover, button:hover {
+  color: aqua;
+}
 
 /* Media Queries */
 
@@ -210,9 +218,13 @@ ul a:hover {
 
   #mobileNav a {
     margin-bottom: 20px;
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: #000000c2;
   }
+
+    #mobileNav a:hover {
+      color: aqua;
+    }
 
 
   .mainMaxTop {
