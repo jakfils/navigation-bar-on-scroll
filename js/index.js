@@ -7,7 +7,7 @@ const mediaQuery2 = window.matchMedia("(max-width: 768px)");
 const container = document.querySelector(".container");
 const nav = document.querySelector("nav");
 const main = document.querySelector(".main");
-const pps = document.querySelectorAll(".pp");
+const translateElements = document.querySelectorAll(".translateElement");
 
 hamburgers.forEach((hamburger) => {
   hamburger.addEventListener("click", (e) => {
@@ -21,8 +21,8 @@ hamburgers.forEach((hamburger) => {
     } else {
       main.style.top = "200px";
     }
-    pps.forEach((pp) => {
-      pp.classList.toggle("translate");
+    translateElements.forEach((translateElement) => {
+      translateElement.classList.toggle("translate");
     });
     nav.style.zIndex = "4";
   });
@@ -39,8 +39,10 @@ mediaQuery.addEventListener("change", (e) => {
 
 mediaQuery2.addEventListener("change", (e) => {
   main.style.top = "0px";
-  pps.forEach((pp) => {
-    pp.classList.remove("translate");
+  translateElements.forEach((translateElement) => {
+    translateElement.classList.remove("translate");
   });
   nav.style.zIndex = "4";
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
