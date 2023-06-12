@@ -7,7 +7,6 @@ const mediaQuery2 = window.matchMedia("(max-width: 768px)");
 const container = document.querySelector(".container");
 const nav = document.querySelector("nav");
 const main = document.querySelector(".main");
-const translateElements = document.querySelectorAll(".translateElement");
 
 hamburgers.forEach((hamburger) => {
   hamburger.addEventListener("click", (e) => {
@@ -15,16 +14,7 @@ hamburgers.forEach((hamburger) => {
     hamburger2.classList.toggle("invisible");
     hamburger2.classList.toggle("visible");
     mobileNav.classList.toggle("invisible");
-    container.insertBefore(nav, container.firstChild);
-    if (mobileNav.classList.contains("invisible")) {
-      main.style.top = "0px";
-    } else {
-      main.style.top = "200px";
-    }
-    translateElements.forEach((translateElement) => {
-      translateElement.classList.toggle("translate");
-    });
-    nav.style.zIndex = "4";
+    
   });
 });
 
@@ -35,14 +25,6 @@ mediaQuery.addEventListener("change", (e) => {
   hamburger2.classList.remove("visible");
   mobileNav.classList.add("invisible");
   
-});
-
-mediaQuery2.addEventListener("change", (e) => {
-  main.style.top = "0px";
-  translateElements.forEach((translateElement) => {
-    translateElement.classList.remove("translate");
-  });
-  nav.style.zIndex = "4";
 });
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
