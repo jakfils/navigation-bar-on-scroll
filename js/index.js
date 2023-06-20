@@ -9,13 +9,9 @@ const desktopNavElements = document.querySelectorAll(".desktopNav a");
 const socialLinksElements = document.querySelectorAll(".socialLinks a");
 const logo = document.querySelector(".logo a");
 const opacity = document.querySelector(".opacity");
-let rootBottomMargin = window.innerHeight - (header.offsetHeight-1);
-console.log(rootBottomMargin);
-console.log(desktopNavElements);
-console.log(socialLinksElements);
-console.log(logo.innerHTML);
-console.log(opacity.style.top);
-
+const servicesTours = document.querySelector(".servicesTours");
+const scrollToTopButton = document.getElementById("scrollToTop");
+let rootBottomMargin = window.innerHeight - (header.offsetHeight - 1);
 const nav = document.querySelector("nav");
 
 hamburgers.forEach((hamburger) => {
@@ -37,17 +33,14 @@ mediaQuery.addEventListener("change", (e) => {
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-let options = {
+let headerObserverOptions = {
   rootMargin: `0px 0px ${rootBottomMargin * -1}px 0px`,
   threshold: 0,
 };
 
-let intersectionCallBack = (entries) => {
+let headerIntersectionCallBack = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log("True");
-      console.log(entry.intersectionRatio);
-
       //remove header backgroundImage Add header backgroundColor
       header.style.backgroundImage = "none";
       header.style.backgroundColor = "#F0F8FF";
@@ -65,8 +58,6 @@ let intersectionCallBack = (entries) => {
       //Change opacity top position
       opacity.style.top = "55px";
     } else {
-      console.log("False");
-      console.log(entry.intersectionRatio);
       //remove header backgroundImage Add header backgroundColor
       header.style.backgroundImage = "url(../img/background.jpg)";
       header.style.backgroundColor = "transparent";
@@ -86,6 +77,25 @@ let intersectionCallBack = (entries) => {
     }
   });
 };
-let observer = new IntersectionObserver(intersectionCallBack, options);
+let headerObserver = new IntersectionObserver(
+  headerIntersectionCallBack,
+  headerObserverOptions
+);
 
-observer.observe(content);
+headerObserver.observe(content);
+
+// Scroll top button
+
+const scrollButtonCallBack = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  });
+};
+
+const scrollButtonObserver = new IntersectionObserver(scrollButtonCallBack);
+
+scrollButtonObserver.observe(servicesTours);

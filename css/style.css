@@ -183,6 +183,8 @@ button:hover {
   color: white;
   font-size: 2em;
   border-radius: 50px;
+  display: none;
+  z-index: 100;
 }
 
 #scrollToTop:hover {
