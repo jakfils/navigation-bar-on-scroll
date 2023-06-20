@@ -173,6 +173,24 @@ button:hover {
   color: aqua !important;
 }
 
+#scrollToTop {
+  position: fixed;
+  background-color: aqua;
+  padding: 5px;
+  transform: rotate(-90deg);
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  font-size: 2em;
+  border-radius: 50px;
+}
+
+#scrollToTop:hover {
+  color: white !important;
+
+  transform: scale(1.1) rotate(-90deg);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 768px) {
