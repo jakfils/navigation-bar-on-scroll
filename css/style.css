@@ -151,7 +151,7 @@ ul a:hover {
 
 .about,
 .tours {
-  background-color: aliceblue;
+  background-color: rgb(203, 206, 209);
 }
 
 .tours {
@@ -167,7 +167,7 @@ ul a:hover {
 
 ul a:hover,
 button:hover {
-  color: aqua;
+  color: aqua !important;
 }
 
 /* Media Queries */
@@ -183,7 +183,7 @@ button:hover {
   }
 
   .logo a {
-    color: #000000c2;
+    color: #000000c2 !important;
   }
 
   ul {
