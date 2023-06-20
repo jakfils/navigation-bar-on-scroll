@@ -6,7 +6,13 @@ body {
   margin: auto;
 }
 
-
+.header {
+  position: sticky;
+  top: 0;
+  background-image: url(../img/background.jpg);
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+}
 
 .opacity {
   position: absolute;
@@ -15,12 +21,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%
+  z-index: -1;
 }
 
 /* Nav */
 nav {
-  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -34,11 +40,10 @@ nav {
 }
 
 .main {
-  min-height: 100vh;
+  height: 700px;
   background-image: url(../img/background.jpg);
-  /* background-position-y: -55px; */
+  background-position: 0 -55px;
   background-repeat: no-repeat;
-  z-index: -50;
 }
 
 .logo {
@@ -84,10 +89,7 @@ ul a:hover {
 
 
 .mainMessage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ padding-top: 200px;
   width: 98%;
   color: #fff;
   text-align: center;
