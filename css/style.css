@@ -1,5 +1,6 @@
 html{
   scroll-padding-top: 55px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: Roboto, sans-serif;
