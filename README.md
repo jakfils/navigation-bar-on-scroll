@@ -1,11 +1,2 @@
-# Responsive NavBar
-
-A HTML, CSS and Vanilla JavaScript responsive NavBar.
-
-## Desktop view
-
-![Desktop view](./img/desktop.JPG)
-
-## Mobile view
-
-![Mobile view](./img/mobile.JPG)
+# Responsive navigation bar on scroll
+A navbar that slides down when scrolling and then stays at a fixed position at a certain height.The page contains a button at the bottom right which appears only after scrolling and which allows you to go back to the top of the page.
