@@ -60,7 +60,7 @@ let headerIntersectionCallBack = (entries) => {
     } else {
       //remove header backgroundImage Add header backgroundColor
       header.style.backgroundImage =
-        "url(./img/background.jpg)";
+        "url(../navigation-bar-on-scroll/img/background.jpg)";
       header.style.backgroundColor = "transparent";
       header.style.boxShadow = "none";
       //Change menu links elements color
