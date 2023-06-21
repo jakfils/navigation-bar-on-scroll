@@ -173,6 +173,11 @@ button:hover {
   color: aqua !important;
 }
 
+.exploreBtn a:hover {
+  color: aqua;
+
+}
+
 #scrollToTop {
   position: fixed;
   background-color: aqua;
