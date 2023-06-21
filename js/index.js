@@ -59,7 +59,8 @@ let headerIntersectionCallBack = (entries) => {
       opacity.style.top = "55px";
     } else {
       //remove header backgroundImage Add header backgroundColor
-      header.style.backgroundImage = "url(../img/background.jpg)";
+      header.style.backgroundImage =
+        "url(./img/background.jpg)";
       header.style.backgroundColor = "transparent";
       header.style.boxShadow = "none";
       //Change menu links elements color
